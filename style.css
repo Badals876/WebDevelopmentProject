@@ -1,0 +1,206 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+
+}
+
+#logo{
+    margin: 10px 15px;
+}
+
+#logo img{
+    height: 45px;
+    margin: 16px 12px;
+}
+
+#navbar ul{
+    display: flex; 
+    font-family: 'Baloo Bhai 2', cursive;
+   /* align-items: center; 
+    justify-self: center;
+    */
+}
+
+#navbar::before{
+    content:"";
+    background-color:black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:76%;
+    width: 100%;
+    z-index:-1;
+    opacity:0.5;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color:white;
+    display: block;
+    text-decoration:none;
+    padding: 5px 10px;
+    margin: 30px 5px;
+    border-radius: 5px;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    padding: 5px 200px;
+    height:534px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content:"";
+    background: url(images/backim.png) no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.6;
+}
+.primary{
+    font-size: 2.8rem;
+    padding:12px;
+    color:brown;
+    font-family: 'Staatliches', cursive;
+}
+#home p{
+    color:rgb(2, 6, 15);
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    
+}
+.btn{
+    display: block;
+    font-size:1.3rem;
+    background-color: rgb(131, 53, 53);
+    color:white;
+    width:180px;
+    height:50px;
+    margin:auto;
+    padding:5px;
+    border-radius: 5px;
+    font-family: 'Staatliches', cursive;
+    border:2px solid white;
+    cursor: pointer;
+
+}
+
+#services{
+    margin: 10px 0px;
+    display:flex;
+    flex-direction:column;
+    
+
+}
+#servicematter{
+    display:flex;
+    margin:10px 0px;
+    justify-content: space-evenly;
+}
+.center{
+    text-align:center;
+}
+.box{
+    margin:10px;
+    border:2px solid red;
+    border-radius:20px;
+    background-color: rgb(240, 236, 231);
+}
+.box img{
+    
+    display:block;
+    width:80%;
+    height:180px;
+    margin: auto;
+    margin-top:30px;
+    
+}
+.secondary{
+    margin:5px;
+    padding:2px 5px;
+    font-size:1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#servicematter p{
+    margin:2px;
+    padding:5px;
+}
+#partners{
+    display:flex;
+    flex-direction: column;
+}
+#clients{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:15px;
+}
+#contact{
+    position:relative;
+}
+#contact::before{
+    margin:20px 10px;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url(images/cus.jpg) no-repeat center center/cover;
+}
+#contact h1{
+    padding:20px;
+    margin-top:40px ;
+    margin-bottom: 20px;
+
+}
+#contact-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box input, 
+#contact-box textarea{
+    width:500px;
+    padding:0.5rem;
+    margin:10px;
+
+}
+#contact-box label{
+    font-size:1.3rem;
+
+}
+#contact-box textarea{
+    height:80px;
+
+}
+.footer{
+    background-color: black;
+    margin-top:20px;
+    height:35px;
+    color:white;
+    font-size:20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
